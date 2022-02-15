@@ -84,13 +84,13 @@ client.on('message', msg => {
         
         else if(functionality === "help"){
             msg.reply(`Hello! I'm the todo-list discord bot, you can create and update your own todolist using the following commands:\n
-                        Create a todo list -> todolist create {First todo item name}\n
-                        Show your todo list -> todolist show\n
-                        Add an item to your todo list -> todolist add {name of the item}\n
-                        Remove an item from your todo list -> todolist remove {name of the item} \n
-                        Check an item from your todo list -> todolist check {name of the item}\n
-                        Uncheck an item from your todo list -> todolist uncheck {name of the item}\n
-                        Happy Listing!`)
+                Create a todo list -> **todolist create {First todo item name}**\n
+                Show your todo list -> **todolist show**\n
+                Add an item to your todo list -> **todolist add {name of the item}**\n
+                Remove an item from your todo list -> **todolist remove {name of the item}**\n
+                Check an item from your todo list -> **todolist check {name of the item}**\n
+                Uncheck an item from your todo list -> **todolist uncheck {name of the item}**\n\n\n
+                **Happy Listing!**`)
         }
         else if(functionality === "show"){
             User.findOne({user_id: userId}, (err, user) => {
